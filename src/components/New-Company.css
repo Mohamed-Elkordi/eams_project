@@ -1,0 +1,81 @@
+.new-company {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #FFF;
+}
+.new-company .logo {
+    position: absolute;
+    left: 100px;
+    top: 40px;
+    color: #3232a0;
+    padding-left: 5px;
+    font-weight: bold;
+    border-left: 2px solid #3232a0;
+}
+.new-company form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+}
+.new-company form h2 { 
+    color: #3232a0;
+    margin-bottom: 20px;
+}
+.new-company form .fields-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.new-company form .fields-container div {
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid #3232a0;
+    background-color: #FFF;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+.new-company form div i {
+    color: #3232a0;
+}
+.new-company form div input {
+    height: 70%;
+    padding-left: 5px;
+    margin-left: 10px;
+    flex: 1;
+    border: none;
+    font-size: 18px;
+    background: none;
+}
+.new-company form div input:focus {
+    outline: none;
+    border: none;
+}
+.new-company form .buttons input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc((100% - 20px) / 2);  
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    
+}
+.new-company form input[type="submit"] {
+    background-color: #3232a0;
+    float: left;
+}
+.new-company form input[type="button"] {
+    color: #3232a0;
+    background-color: lightgrey;
+    float: right;
+}
